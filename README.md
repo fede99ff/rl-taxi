@@ -30,13 +30,6 @@ A taxi moves on a 5×5 grid and must pick up a passenger and drop them at the ri
 
 All agents bootstrap from the next state only when the episode is not terminated: transitions are stored with the `terminated` flag, not `terminated or truncated`, so time-limit truncations still bootstrap correctly.
 
-## Results
-
-All three deep agents solve the environment: their greedy policies deliver the passenger in 100% of 50,000 test episodes. Their average reward per episode (7.90–7.94) is close to the optimum for Taxi-v3, so the learned routes are close to the shortest ones; Double DQN obtains the highest total reward, followed by the target-network DQN.
-
-_TBD: tabular agents' results and training curves (average reward, episode length and success rate, 100-episode moving average)._
-
-Results come from a single run with a fixed seed; with three agents at 100%, differences in average reward of a few hundredths are within run-to-run variation.
 
 ## Possible extensions
 
